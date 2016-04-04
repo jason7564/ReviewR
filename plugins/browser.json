@@ -1,0 +1,27 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ca.edumedia.prez0005.reviewr"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "ca.edumedia.prez0005.reviewr"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "ca.edumedia.prez0005.reviewr"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ca.edumedia.prez0005.reviewr"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "ca.edumedia.prez0005.reviewr"
+        }
+    },
+    "dependent_plugins": {}
+}

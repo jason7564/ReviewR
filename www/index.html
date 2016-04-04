@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css" />
+        <title>ReviewR</title>
+    </head>
+    <body>
+    
+    <!--Header-->
+        <div id="mastHead" class="reviewrHeaderAlign">
+            <div id="backBin" class="hide">
+                <i id="backBtn" class="fa fa-arrow-left fa-2x"></i>
+            </div>
+            <h1 class="mainHeader">
+                ReviewR
+            </h1>
+        </div>
+    
+    <!--Review List Page-->
+        <section data-role="page" id="reviewListPage" data-url="reviewList" class="active-page">
+            <ul class="list-view">
+                <i class="Loading blink" id="initialMsg">Loading...</i>
+            <!--Max 30 characters per list item-->
+            </ul>
+        </section>
+    
+    <!--Picture Page-->
+        <section data-role="page" id="picPage" data-url="picPage" class="inactive-page">
+            <form>
+                <label for="itemName" id="itemNameLabel">Name of Item</label>
+                <input type="text" id="itemName">
+                <label for="itemDescription" id="itemDescriptionLabel">Item Description</label>
+                <textarea rows="4" cols="39" id="itemDescription"></textarea>
+                <label for="itemRating" id="itemRatingLabel">Item Rating</label>
+                <div id="itemRating">
+                    <i class="fa fa-star fa-3x 1star"></i>
+                    <i class="fa fa-star fa-3x 2star"></i>
+                    <i class="fa fa-star fa-3x 3star"></i>
+                    <i class="fa fa-star fa-3x 4star"></i>
+                    <i class="fa fa-star fa-3x 5star"></i>
+                </div>
+            </form>
+            <img src="#" alt="" id="reviewPicture" class="hide">
+        </section>
+    
+    <!--Single Review Page-->
+        <section data-role="page" id="singleReviewPage" data-url="singleReviewPage" class="inactive-page">
+           
+            <h2 id="singleReviewPageHeader"></h2>
+            
+            <div id="singleReviewItemRating">
+                <i class="fa fa-star fa-lg 1star"></i>
+                <i class="fa fa-star fa-lg 2star"></i>
+                <i class="fa fa-star fa-lg 3star"></i>
+                <i class="fa fa-star fa-lg 4star"></i>
+                <i class="fa fa-star fa-lg 5star"></i>
+            </div>
+            
+            <img id="singleReviewImage" src="#" alt="">
+            <div id="descriptionBin"></div>
+        </section>
+    
+    <!--Footer-->
+        <div id="footer">
+            <div id="addBtn">
+                <i class="fa fa-plus fa-3x" id="plusIcon"></i>
+            </div>
+            <div id="addBtn2" class="hide">
+                <i class="fa fa-plus fa-3x" id="plusIcon"></i>
+            </div>
+            <div id="cameraBtn" style="margin-top: 7px;" class="hide">
+                <i class="fa fa-camera fa-2x"></i>
+            </div>
+        </div>
+       
+    <!--Scripts-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="https://hammerjs.github.io/dist/hammer.js"></script> 
+        
+    </body>
+</html>
